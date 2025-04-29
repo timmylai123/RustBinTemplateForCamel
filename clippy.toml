@@ -1,0 +1,11 @@
+# clippy.toml
+
+# 取消警告命名不符合 Rust 慣例
+warns = []
+
+# 或針對具體命名規則禁用
+allow_clippy_lints = [
+    "non_snake_case",  # 允許變數、函數不用 snake_case
+    "non_camel_case_types",  # 允許 struct/enum 不用 CamelCase
+    "upper_case_acronyms",  # 允許大寫縮寫（例如 HTMLParser）
+
